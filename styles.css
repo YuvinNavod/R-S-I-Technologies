@@ -140,9 +140,22 @@ section h1 {
 }
 
 /* style for projects section */
-#projects {
-    background-color: #ffffff;
+
+.project-section
+ {
+    background: url('images/Backgrounds/about.jpg') no-repeat center center; 
+    background-size: cover;  /* Ensures the image covers the section */
+    padding: 50px 70px;
+    text-align: left;
+    color: #0E3262;       /* Headding colour*/
+    font-family: montserrat;
 }
+
+.project-section h1 h3{
+    font-weight: bold;
+}
+
+
 
 /* style for products section */
 #products {
