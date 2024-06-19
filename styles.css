@@ -3,7 +3,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding:0%;
 }
 
 nav {
@@ -56,13 +56,87 @@ section h1 {
 }
 
 /* style for about section */
-#about {
-    background-color: #ffffff;
+
+.about-section {
+    background: url('images/Backgrounds/about.jpg') no-repeat center center; 
+    background-size: cover;  /* Ensures the image covers the section */
+    padding: 50px 20px;
+    text-align: center;
+    color: white;       /* Ensures text is readable on dark background */
+}
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #002F6C;  /* Dark blue color */
+}
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+/* Responsive adjustments for about */
+
+@media (max-width: 768px) {
+    .intro-section h2 {
+        font-size: 2em;
+    }
+    .intro-section p {
+        font-size: 1em;
+    }
 }
 
 /* style for services section */
-#services {
-    background-color: #ffffff;
+.container {
+    background-color: #002F6C; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container h2 {
+    margin-bottom: 20px;
+    text-align:left
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image-item {
+    flex: 1 1 calc(25% - 40px); /* 4 items per row with spacing */
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #002F6C; /* Text color to match the background */
+}
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-item figcaption {
+    padding: 10px;
+    font-size: 1em;
+}
+/* Responsive Adjustments  for services*/
+@media (max-width: 1200px) {
+    .image-item {
+        flex: 1 1 calc(33.333% - 40px); /* 3 items per row */
+    }
+}
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row */
+    }
+}
+@media (max-width: 480px) {
+    .image-item {
+        flex: 1 1 100%; /* 1 item per row */
+    }
 }
 
 /* style for projects section */
